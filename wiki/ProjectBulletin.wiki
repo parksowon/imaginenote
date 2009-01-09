@@ -1,0 +1,4 @@
+ImagineNote 
+== Revision Log ==
+
+ * [wiki:20090108] - ImagineNote Repository 생성 및 code upload
