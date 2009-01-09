@@ -1,1 +1,23 @@
-프로젝트 진행 상황을 이곳에 적을 것.
+Mina project용 위키 게시판
+== Revision Log 검토 ==
+
+ * [wiki:MNA1071] - Mina 1.7.1 : 일반 OEM Web Guard v2.3.5 08121218 업데이트
+ * [wiki:MNA2033] - Mina 2.8.0 : Si Pass 변경
+ * [wiki:MNA1070] - Mina 1.7.1 : Remote Control 2 PTZ조작 수정
+ * [wiki:MNA1069] - Mina 1.7.1 : Seagate HDD 수정
+ * [wiki:MNA2032] - Mina 2.8.0 : Web Guard 업데이트 & 호주 DST 변경
+ * [wiki:MNA2031] - Mina 2.8.0 : Web Guard & Clip Player 업데이트
+ * [wiki:MNA2030] - Mina 2.8.0 : Web Guard 업데이트
+ * [wiki:MNA2029] - Mina 2.8.0 : Keyboard, Si Pass, PTZ 수정
+ * [wiki:MNA2028] - Mina 2.8.0 : PTZ 수정, LAN 오류, 문자열 수정
+ * [wiki:MNA2027] - Mina 2.8.0 : Clip Player 업데이트 & 추가 번역
+ * [wiki:MNA2026] - Mina 2.8.0 : 번역 오류 수정
+ * [wiki:MNA2025] - Mina 2.8.0 : Siemens Web Guard 언어 관련 업데이트
+ * [wiki:MNA1068] - Mina 1.7.0 : LG DVD-RW 호환성 검토
+ * [wiki:MNA2024] - Mina 2.8.0 : LG DVD-RW 관련 수정 & 추가 번역
+ * [wiki:MNA2023] - Mina 2.8.0 : 추가 번역 & 소프트웨서 재부팅 후 프론트 키 먹통 해결
+ * [wiki:MNA2022] - Mina 2.8.0 : Health Check 저장 문제 & RAS+에서 Other HDD 사용 오류 해결
+ * [wiki:MNA2021] - Mina 2.8.0 : 번역 완료, Web Guard 업데이트 및 RAS+에서 Other HDD 사용
+ * [wiki:MNA2020] - Mina 2.8.0 : Web Guard 업데이트 및 RAS+에서 Other HDD 사용
+ * [wiki:MNA2019] - Mina 2.8.0 : Vss Sdk v2.0 추가 및 전용 Web Guard 적용 중 build 업데이트
+ * [wiki:MNA2018] - Mina 2.8.0 : Vss Sdk v2.0 추가 및 전용 Web Guard 적용 [http://10.0.8.3/Mina/log/MNA2018/logInfo.html STYLELOG]
