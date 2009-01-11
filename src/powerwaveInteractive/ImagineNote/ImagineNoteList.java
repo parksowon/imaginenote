@@ -18,54 +18,7 @@ public class ImagineNoteList extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listpage);        
         
-        // Listen for button clicks
-        Button button = (Button)findViewById(R.id.button_save);
-        button.setOnClickListener(_buttonSaveListener);
-        
-        button = (Button)findViewById(R.id.button_clear);
-        button.setOnClickListener(_buttonClearListener);
-        
-        button = (Button)findViewById(R.id.button_show_list);
-        button.setOnClickListener(_buttonClearListener);
-        
-        
-    }
-    
-    /**
-     * event handler definition for button_save. get current text and push data stack.
-     * @return void.
-     */
-    private OnClickListener _buttonSaveListener = new OnClickListener() {
- 
-		public void onClick(View v) {
-			// TODO Auto-generated method stub
-			android.util.Log.i("androidtest01", "onClick() called");
-		}    	
-    };
-    
-    /**
-     * event handler definition for button_clear. clears all text in text_memo. 
-     * @return void.
-     */
-    private OnClickListener _buttonClearListener = new OnClickListener() {
-
-		public void onClick(View v) {
-			// TODO Auto-generated method stub
-			TextView textView = (TextView)findViewById(R.id.text_memo);
-			textView.setText("");
-		}    	
-    };
-    
-    /**
-     * event handler definition for button_clear. clears all text in text_memo. 
-     * @return void.
-     */
-    private OnClickListener _buttonShowListListener = new OnClickListener() {
-
-		public void onClick(View v) {
-			// TODO Auto-generated method stub			
-		}    	
-    };
+    }    
     
     
     private static final int REVERT_ID = Menu.FIRST;
