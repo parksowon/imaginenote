@@ -26,40 +26,41 @@ import android.util.Log;
 
 import java.util.HashMap;
 
-
 /**
- * http://code.google.com/intl/ko-KR/android/reference/android/content/ContentProvider.html
- * Content Provider는 application에 content를 제공하는 역할을 한다. 
- * data를 encapsulate하고 그 데이터를 단일 ContentResolver를 통해 
- * 응용프로그램에 제공한다. 여러 application사이에 프로그램을 공유하기
- * 위해서는 Content Provider를 사용해야 한다. 데이터를 공유할 필요가 
- * 없다면 SQLiteDatabase를 이용하여 데이터베이스에 직접 접근하면 된다.
+ * study 내용은 아래 링크 참조
+ * http://zestime.cafe24.com/wiki/moin.cgi/Content_Provider?action=show
  * 
- * Android's content provider들은 그들의 clients와 느슨하게 연결되어 있다. 
- * 각각의 content provider들은 처리할 수 있는 데이터 타입을 표현하는 
- * URI(unique string identifier)를 노출하며, client는 URI에 대응하여
- * 데이터를 저장하거나 얻어오는 동작을 정의해야 한다. 
- * 
- * 각각의 content provider는 클라이언트가 query/add/update/delete
- * 하기 위해 사용하는 URI를 노출한다. 
- * URI는 두가지의 형식을 가진다. 
- *
- * ContentResolver를 통해 생성되면 시스템은 주어진 uri에 대한 authority를 
- * 검사한 후 요청을 등록된 content provider로 authority와 함께 넘긴다.  
- * 
- * You can see some of Android's native content providers in the provider package.
- * Check 'android.provider' packages. 
- * 
- * The primary methods that need to be implemented are : 
- * query(Uri, String[], String, String[], String); 	// returns data to the caller
- * insert(Uri, ContentValues);						// inserts new data into the content provider
- * update(Uri, ContentValues, String, String[]);	// updates existing data int the content provider
- * delete(Uri, String, String[]);					// deletes data from the content provider
- * getType(Uri);									// returns the MIME type of data int the content providre
- * 
- * This class takes care of cross process calls so subclasses don't have to worry 
- * about which process a request is coming from.
  */
-public class ImagineNoteProvider extends ContentProvider{
 
+public class ImagineNoteProvider extends ContentProvider{
+	@Override
+    public boolean onCreate() {
+       
+        return true;
+    }
+
+    @Override
+    public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder) {
+    	return null;        
+    }
+
+    @Override
+    public String getType(Uri uri) {
+        return "";
+    }
+
+    @Override
+    public Uri insert(Uri uri, ContentValues initialValues) {
+		return uri;        
+    }
+
+    @Override
+    public int delete(Uri uri, String where, String[] whereArgs) {
+        return 0;
+    }
+
+    @Override
+    public int update(Uri uri, ContentValues values, String where, String[] whereArgs) {
+        return 0;
+    }
 }
