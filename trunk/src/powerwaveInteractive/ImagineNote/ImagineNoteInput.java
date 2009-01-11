@@ -1,6 +1,8 @@
 package powerwaveInteractive.ImagineNote;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.content.*;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -8,6 +10,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
+
 import java.util.*; //most of data structure class is in here!
 
 public class ImagineNoteInput extends Activity {
@@ -27,7 +30,7 @@ public class ImagineNoteInput extends Activity {
         button.setOnClickListener(_buttonClearListener);
         
         button = (Button)findViewById(R.id.button_show_list);
-        button.setOnClickListener(_buttonClearListener);
+        button.setOnClickListener(_buttonShowListListener);
         
         
     }
@@ -64,7 +67,22 @@ public class ImagineNoteInput extends Activity {
     private OnClickListener _buttonShowListListener = new OnClickListener() {
 
 		public void onClick(View v) {
-			// TODO Auto-generated method stub			
+			// TODO Auto-generated method stub
+			
+			/**
+			 * Example for opening a new screen : 
+			 * make intent, adding data(if needed), and call 
+			 * startActivity with intent.
+			 */
+
+			Intent myIntent = new Intent(ImagineNoteInput.this, ImagineNoteList.class);
+				
+			// or use below 2 code line instead. (same function as above code.)
+			//Intent myIntent = new Intent();
+			//myIntent.setClassName("powerwaveInteractive.ImagineNote", "powerwaveInteractive.ImagineNote.ImagineNoteList");
+			
+			
+			startActivity(myIntent);			
 		}    	
     };
         
