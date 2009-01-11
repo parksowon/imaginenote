@@ -22,7 +22,13 @@ public class ImagineNoteInput extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);        
         
-        // Listen for button clicks
+        /**
+         * Set Event Handler for controls : 
+         * Get reference for controls by calling findViewById() 
+         * with control's id and call reference's member function
+         * setOnClickListener(). with Listener object.
+         * 
+         */
         Button button = (Button)findViewById(R.id.button_save);
         button.setOnClickListener(_buttonSaveListener);
         
