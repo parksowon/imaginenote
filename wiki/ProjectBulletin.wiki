@@ -2,5 +2,5 @@
 
 == Revision Log ==
 
- * [2009.01.13 03:00:00] - ContentProvider클래스 추가(기능구현중)
+ * [2009.01.13 03:00:00] - !ContentProvider클래스 추가(기능구현중)
  * [2009.01.08 23:00:00] - ImagineNote Repository 생성 및 code upload
