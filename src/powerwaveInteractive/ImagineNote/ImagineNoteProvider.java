@@ -30,9 +30,43 @@ import java.util.HashMap;
  * study 내용은 아래 링크 참조
  * http://zestime.cafe24.com/wiki/moin.cgi/Content_Provider?action=show
  * 
+ * Provides access to a database of notes. Each note has a title, note itself, 
+ * creation date and modified date.
  */
-
 public class ImagineNoteProvider extends ContentProvider{
+	
+	private static final String TAG = "ImagineNoteProvider";
+	
+	private static final String databaseName="ImagineNoteDatabase.db";
+	private static final int databaseVersion=1;
+	private static final String tableName_note="Notes";
+	
+	
+	/** 
+	 * @author firsttimelove@gmail.com
+	 * DB접근은 ContentProvider에 종속적이고 자바 파일 하나에 클래스 하나만
+	 * 넣을 수 있으므로 내부에서 정의한 것으로 추정...
+	 * 
+	 * SQLiteOpenHelper 클래스는 기본으로 onCreate(), onUpgrade() 두 함수를
+	 * 재정의 해야 한다.
+	 */
+	private static class DatabaseHelper extends SQLiteOpenHelper{
+		DatabaseHelper(Context context) {
+			super(context, databaseName, null, databaseVersion);
+		}
+		
+		@Override
+		public void onCreate(SQLiteDatabase db){
+			//db.execSQL()함수를 호출한다.
+			
+		}
+
+		@Override
+		public void onUpgrade(SQLiteDatabase arg0, int arg1, int arg2) {
+			// 기존의 테이블을 삭제하고 onCreate()를 호출하면 된다.			
+		}
+	}
+	
 	@Override
     public boolean onCreate() {
        
