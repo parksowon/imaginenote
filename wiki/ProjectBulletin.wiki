@@ -4,3 +4,11 @@
 
  * [2009.01.13 03:00:00] - !ContentProvider클래스 추가(기능구현중)
  * [2009.01.08 23:00:00] - ImagineNote Repository 생성 및 code upload
+
+-----
+
+== TODO ==
+ * ContentProvider 
+  * android가 제공하는 ContentProvider 사용 및 ContentProvider를 정의
+ * ImagineNote UI 모양새/스토리보드 or usecase 필요
+  * ContentProvider 관련 해결되면 일차적으로 ImagineNote완성 가능하리라 여김...
