@@ -58,6 +58,10 @@ public class ImagineNoteProvider extends ContentProvider{
 		@Override
 		public void onCreate(SQLiteDatabase db){
 			//db.execSQL()함수를 호출한다.
+			/*
+			db.execSQL("create table " + tableName_note + "("
+					)
+					*/
 			
 		}
 
