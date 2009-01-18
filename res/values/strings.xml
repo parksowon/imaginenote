@@ -2,6 +2,11 @@
 <resources>
     <string name="hello">Hello World, ImagineNote</string>
     <string name="app_name">ImagineNote</string>
-<string name="menu_revert">Revert</string>
+<string name="menu_insert">Insert</string>
 <string name="menu_delete">Delete</string>
+<string name="menu_edit">Edit</string>
+<string name="menu_discard">Discard</string>
+<string name="menu_undo">Undo</string>
+<string name="menu_save">Save</string>
+<string name="menu_set_title">Set Title</string>
 </resources>
