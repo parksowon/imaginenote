@@ -14,7 +14,7 @@ public final class Note implements BaseColumns{
     /**
      * The content:// style URL for this table
      */
-    public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/Note");
+    public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/Notes");
 
     /**
      * The MIME type of {@link #CONTENT_URI} providing a directory of Note.
@@ -25,6 +25,12 @@ public final class Note implements BaseColumns{
      * The MIME type of a {@link #CONTENT_URI} sub-directory of a single note.
      */
     public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.google.note";
+    
+    
+    /**
+     * The default ImagineNote title string
+     */
+    public static final String DEFAULT_TITLE = "Untitled";
 
     /**
      * The default sort order for this table
